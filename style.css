@@ -1,0 +1,33 @@
+div.figure {
+  float: right;
+  width: 30%;
+  font-style: italic;
+    text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+div.texto{
+    font-family: monospace;
+    text-align: justify;
+    
+}
+
+div.social{
+    font-family:cursive;
+    text-align: right;
+}
+h1{
+    font-family:cursive;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+div.explicando{
+    font-size: smaller;
+    text-align: right;
+}

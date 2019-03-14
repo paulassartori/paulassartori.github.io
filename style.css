@@ -1,33 +1,12 @@
-div.figure {
-  float: right;
-  width: 30%;
-  font-style: italic;
-    text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-div.texto{
-    font-family: monospace;
-    text-align: justify;
-    
-}
-
-div.social{
-    font-family:cursive;
+div.social {
     text-align: right;
 }
-h1{
-    font-family:cursive;
-    text-align: center;
+body{ 
+  background-image: url("snowcapped-mountain-peak_4460x4460.jpg");
+  height: auto; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-h3{
-    text-align: center;
-}
-div.explicando{
-    font-size: smaller;
-    text-align: right;
-}
+
+
+<img src="snowcapped-mountain-peak_4460x4460.jpg" alt="Montanha coberta de neve" Photo by <a href="https://burst.shopify.com/@scott_5x5?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Snowcapped+Mountain+Peak&amp;utm_medium=referral&amp;utm_source=credit">Scott Murdoch</a> from <a href="https://burst.shopify.com/nature?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Snowcapped+Mountain+Peak&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>

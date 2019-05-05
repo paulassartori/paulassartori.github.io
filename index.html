@@ -1,21 +1,196 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Paula's Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" href=snintento.png>
-    </head>
-    <body>
-        <div class="social">
-            <p>
-                <a href="https://br.linkedin.com/in/paula-sartori-428021a3" target="_blank"><img src="in.svg" width=30px height=30px alt="linkedin icon" /></a></li>
-                <a href="https://github.com/paulassartori" target="_blank"><img src="git.svg" width=30px height=30px alt="github icon" /></a></li>
-                <a href="https://www.facebook.com/paulaxsartori" target="_blank"><img src="fb.svg" width=30px height=30px alt="facebook icon" /></a></li>
-                <a href="https://www.instagram.com/_paulasss/" target="_blank"><img src="insta.svg" width=30px height=30px alt="instagram icon" /></a></li>
-            </p>
-        </div>
-    <hr/>
-    </body>
+<head>
+    <title>Paula Sartori - Portifolio</title>
+    <style>
+        
+        html {
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            font-family: monospace;
+        }
+        
+        body {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            overflow: hidden;
+            background-image: url("snowcapped-mountain-peak_4460x4460.jpg");
+            background-size: cover;
+        }
+        
+        .outer-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+        .header {
+            width: 100%;
+            /*background-color: #d9bfd7;*/
+        }
+
+        .container {
+            flex: 1;
+            width: 100%;
+            overflow-y: auto;
+            color: #fff;
+            padding-bottom: 1%;
+        }
+
+        .brand-logo-space {
+            width: 42%;
+            float: left;
+            text-align: left;
+            padding: 1% 2% 1% 6%;
+            height: 33px;
+            color: #d9bfd7;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .header-links {
+            width: 42%;
+            float: right;
+            text-align: right;
+            padding: 1% 6% 1% 2%;
+        }
+
+        .menu-on {
+            color: #d7d9bf;
+            background-color:rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-off {
+            color: #d9bfd7;
+        }
+
+        #menu-skills {
+            width: 33%;
+            float: left;
+            padding: 0.7% 2% 0.7% 10%;
+            margin-top: 1px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+
+        #menu-skills:hover {
+            color: #d7d9bf;
+            cursor: pointer;
+            background-color:rgba(0, 0, 0, 0.15);
+        }
+
+        #menu-aboutme {
+            width: 33%;
+            float: right;
+            padding: 0.7% 10% 0.7% 2%;
+            margin-top: 1px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 5%;
+        }
+
+        #menu-aboutme:hover {
+            color: #d7d9bf;
+            cursor: pointer;
+            background-color:rgba(0, 0, 0, 0.15);
+        }
+
+        #skills-experience-content {
+            display: block;
+        }
+
+        #aboutme-content {
+            display: none;
+        }
+
+        .content {
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgba(0, 0, 0, 0.15);
+            padding: 1% 1% 1% 1%;
+        }
+
+        .topic {
+            margin: 1% 0 1% 0;
+        }
+
+        .pict-left {
+            width: 50%;
+        }
+
+        .text-right {
+            width: 50%;
+        }
+
+        .pict-right {
+            width: 50%;
+        }
+
+
+        .text-left {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="header">
+            <div class="brand-bar">
+                <div class="brand-logo-space">Paula Sartori</div>
+                <div class="header-links">
+                    <a href="https://br.linkedin.com/in/paula-sartori-428021a3" target="_blank"><img src="in.svg" width="30px" height="30px" alt="linkedin icon"></a>
+                    <a href="https://github.com/paulassartori" target="_blank"><img src="git.svg" width="30px" height="30px" alt="github icon"></a>
+                    <a href="https://www.facebook.com/paulaxsartori" target="_blank"><img src="fb.svg" width="30px" height="30px" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/_paulasss/" target="_blank"><img src="insta.svg" width="30px" height="30px" alt="instagram icon"></a>
+                </div>
+            </div>
+            <div class="menu">
+                <div onclick="loadContent('skills');" class="menu-on" id="menu-skills">skills and experience</div>
+                <div onclick="loadContent('aboutme');" class="menu-off" id="menu-aboutme">about me</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content" id="skills-content">skills-experience-content</div>
+            <div class="content" id="aboutme-content">
+                <div class="topic">
+                    <div class="pict-left">HAHAHHAHAHAH</div>
+                    <div class="text-right">text</div>
+                </div>
+                <div class="topic">
+                    <div class="pict-right">pict</div>
+                    <div class="text-left">text</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+	function loadContent(content) {
+
+        // set menu items as off
+        var menuItems = document.getElementsByClassName('menu-on');
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].className = 'menu-off';
+        }
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        document.getElementById('menu-'+content).className = 'menu-on';
+        //document.getElementById(content+'-content').style.display = 'block';
+        document.getElementById(content+'-content').style.display = 'block';
+    }
+</script>
 </html>

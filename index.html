@@ -23,6 +23,10 @@
             background-image: url("snowcapped-mountain-peak_4460x4460.jpg");
             background-size: cover;
         }
+
+        li {
+            padding: 0 4% 1.5% 0
+        }
         
         .outer-container {
             width: 100%;
@@ -42,14 +46,13 @@
         .container {
             flex: 1;
             width: 100%;
-            overflow-y: auto;
+            overflow-y: overlay;
             color: #fff;
             padding-bottom: 1%;
         }
 
         .brand-logo-space {
             width: 42%;
-            float: left;
             text-align: left;
             padding: 1% 2% 1% 6%;
             height: 33px;
@@ -115,33 +118,45 @@
         }
 
         .content {
-            width: 88%;
+            width: 72%;
             margin-left: auto;
             margin-right: auto;
             background-color:rgba(0, 0, 0, 0.15);
-            padding: 1% 1% 1% 1%;
+            padding: 1% 9% 1% 9%;
+            overflow: auto;
         }
 
         .topic {
-            margin: 1% 0 1% 0;
+            margin: 2% 0 2% 0;
+            overflow: auto;
         }
 
-        .pict-left {
-            width: 50%;
-            /* test */
+        .pict-box {
+            width: 49%;
         }
 
-        .text-right {
-            width: 50%;
+        .text-box {
+            width: 49%;
         }
 
-        .pict-right {
-            width: 50%;
+        .left {
+            float: left;
         }
 
+        .right {
+            float: right;
+        }
 
-        .text-left {
-            width: 50%;
+        .inner-right {
+            text-align: right;
+        }
+
+        .inner-left {
+            text-align: left;
+        }
+
+        #skills-content {
+            text-align: justify;
         }
     </style>
 </head>
@@ -149,7 +164,7 @@
     <div class="outer-container">
         <div class="header">
             <div class="brand-bar">
-                <div class="brand-logo-space">Paula Sartori</div>
+                <div class="brand-logo-space left">Paula Sartori</div>
                 <div class="header-links">
                     <a href="https://br.linkedin.com/in/paula-sartori-428021a3" target="_blank"><img src="in.svg" width="30px" height="30px" alt="linkedin icon"></a>
                     <a href="https://github.com/paulassartori" target="_blank"><img src="git.svg" width="30px" height="30px" alt="github icon"></a>
@@ -163,15 +178,24 @@
             </div>
         </div>
         <div class="container">
-            <div class="content" id="skills-content">skills-experience-content</div>
+            <div class="content" id="skills-content">
+                <ul>
+                    <li><b>Lorem ipsum:</b> sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum</li>
+                    <li><b>Lorem ipsum:</b> sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum</li>
+                    <li><b>Lorem ipsum:</b> sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum, in consequat enim porttitor. Sed et ante in ligula gravida tristique. Aenean volutpat ligula at ante volutpat, eu cursus purus tincidunt. Nunc lacus lectus, hendrerit ut orci nec, ultrices tristique ex. Nam cursus blandit ultrices. Cras laoreet porttitor eros id venenatis. Vivamus commodo mi non elit tempor egestas. Phasellus egestas, nisl quis accumsan consectetur, augue nisi fringilla lectus, et mattis felis arcu vitae est. Aliquam eros arcu, consequat eget magna non, rhoncus efficitur ipsum. Duis in porta elit. Suspendisse potenti. Sed sollicitudin euismod feugiat. Sed mollis neque ac dignissim pretium.</p>
+                <p>Vivamus dolor dolor, varius ut accumsan sit amet, posuere nec eros. Suspendisse et ex sem. Donec lectus arcu, tristique in maximus ut, pellentesque ac augue. Sed consectetur nulla dolor, sit amet elementum erat lobortis non. Donec sit amet justo finibus, sodales tortor id, ornare turpis. Morbi et nunc urna. Nam sit amet leo ligula.</p>
+                <p>Curabitur ipsum ipsum, dignissim vel neque nec, convallis vehicula augue. Vivamus quis libero eget metus posuere mattis vel ut metus. Aliquam ut mauris quis leo mollis rutrum. Proin tincidunt hendrerit nisl, vel sollicitudin ligula maximus id. Maecenas dapibus varius velit, a tincidunt quam auctor a. Sed nisi ex, ultrices ut semper nec, fermentum in tortor. Ut nec dolor sit amet nunc condimentum sollicitudin eu nec mauris. Fusce ornare, leo vel tempor maximus, nisl massa lacinia dolor, egestas consequat mi sem eu eros. Donec leo erat, auctor a nulla sit amet, iaculis molestie turpis. Fusce id iaculis augue. Praesent faucibus efficitur enim at laoreet. Cras at mauris est. Curabitur lacinia mi vitae arcu iaculis, a faucibus arcu convallis. Sed consectetur mi magna, eget euismod est tempor id.</p>
+            </div>
             <div class="content" id="aboutme-content">
                 <div class="topic">
-                    <div class="pict-left">HAHAHHAHAHAH</div>
-                    <div class="text-right">text</div>
+                    <div class="pict-box left inner-right"><img src="redbull.jpg" width="200" /></div>
+                    <div class="text-box right inner-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum, in consequat enim porttitor. Sed et ante in ligula gravida tristique.</div>
                 </div>
                 <div class="topic">
-                    <div class="pict-right">pict</div>
-                    <div class="text-left">text</div>
+                    <div class="text-box left inner-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium felis vitae dui condimentum, in consequat enim porttitor. Sed et ante in ligula gravida tristique.</div>
+                    <div class="pict-box right inner-left"><img src="redbull.jpg" width="200" /></div>
                 </div>
             </div>
         </div>
@@ -190,7 +214,6 @@
             contents[i].style.display = 'none';
         }
         document.getElementById('menu-'+content).className = 'menu-on';
-        //document.getElementById(content+'-content').style.display = 'block';
         document.getElementById(content+'-content').style.display = 'block';
     }
 </script>
